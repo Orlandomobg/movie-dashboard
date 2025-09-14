@@ -1,0 +1,75 @@
+/* si tu quieres que hayan cosas que se aplique por defecto a todo en general tienes que poner un asterisco que va a ser como el por defecto de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* selectores etiqueta */
+/*sirve para ponerle la configuracion de coleres o lo que sea a la etiqueta que llamas*/
+header{
+    background-color: black;
+    /*agregar espacio a la caja*/
+    padding: 15px;
+}
+
+/* suele haber un problema cuando trabajas con etiquetas porque puede que una etiqueta se le aplique a todo con lo cual OJO*/
+
+
+
+/*selectores id*/
+/* selector para un valor unico
+tener en cuenta de que primero tienes que nombrar el elemento en html y despues te lo traes a css*/
+#logo{
+    width: 100px;
+}
+
+/*selectores de class*/
+/* es lo mismo todo el rato solo que esto te sirve para las clases, un grupo de elementos enxdonde todos tienen mas mismas caracteristicas*/
+.link{
+color: white; /* aqui se cambia el color solo a las letras principales, pero en este caso en especifico se esta poniendo una etiqueta a, con lo cual en html no acepta herencia, asi wque si se le pone color a a tiene que especificarse en la etiqueta*/
+}
+
+/* ahora si se lo quieres pober espeficamente a a tienes que hacer un selector compuesto*/
+.link a{
+    color: white;
+    /*si quieres quitar subrayado*/
+    text-decoration: none;
+}
+.icons{
+    color: white;
+}
+/*por defecto todas las etiquetas ubican un display y estan organizadas por orden de lineas ento ces para eso tienes una funcion que se llama display inline, el tema con esto es wue no te permite ajustar el tamaño para eso tienes que poner una funcion compuesta que te permita hacer la configuracion*/
+
+.nav{
+    display: inline-block;
+    /*poner margen para separar el content del logo y de los iconos*/
+    margin-left: 50px;
+    margin-right: 50px;
+} /* esto pasa de lado nada mas el nav pero si quieres que todos los elementos se pongan de lado tienes que hacerlo con la clase hija que en este caso es link*/
+.link{
+    display: inline-block;
+    padding: 10px;
+}
+/* para cuestiones de espacios en blanco existen dos cosas a tonar en cuenta, 1 es el margen que tienes a los laterales arriba y abajo, y 2 es el padding que es el ajusto de un elemento en el espacio interno */
+
+/* si hay cosas que aparecen con espacio o cosas asi es porque hay algunas etiquetas que tienen unos parametros por defecto*/
+
+.container{
+    width: 80%;
+    margin: auto; /* ESTO EN TODO CASI SI QUIERES QUE SE HAGA ESPACIO EN LOS LATERALES*/
+
+}
+
+.container-imagen{
+   width: 100%; 
+}
+
+.article{
+    display: inline-block;
+    width: 60%;
+}
+
+.figure{
+    display: inline-block;
+    width: 35%;
+}

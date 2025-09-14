@@ -1,0 +1,123 @@
+<!--#clase 1: tener en cuenta que esto lo tienes que buscar en tu pc luego, repo git-->
+
+<!--se llama index porque es el primer archivo que uno busca por naturaleza.-->
+
+<!-- estructura general de html-->
+ <!-- hay una extesion que se llama live server que te permite hacer extension de tu trabajo
+  con otros usuarios, y tambien te permite visualizarlo en tiempo real en el navegador-->
+<!-- en html se trabaja con etiquetas:-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- etiquetas semanticas: que significa cada una de las etiquietas y cual es su significado 
+   para el navegador --> 
+   <div>
+    caja sin signficado
+   </div> 
+   <header>header</header>
+   <article>article</article>
+   <section>section</section>
+   <aside>aside</aside>
+   <nav>nav</nav>
+   <footer>footer</footer>
+<!--instalar live server-->
+   <span>span</span>
+   <a href=".">link</a><!--tiene un signficsdo distinto-->
+</body>
+</html>
+<!-- herramienta que se llama excalidraw: que tw permite hacer bocetos, y poder seccionar 
+ partes de una pagina en el caso tal de que te quieraas inspirar-->
+
+ <!--ejercicio 1:-->
+ <!--empezar sienpre de fuera hacia dentro-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+ </head>
+ <body>
+    <header>
+        <img src="./imagenes/IMG_0816.svg" alt="logo" id="logo"/><!-- en este caso con la imagen podemos poner la direccion de la imagen que esta en windows -->
+        <nav class="nav">
+            <ul>
+                <li class="link">
+                    <a href="#">programas</a>
+                </li>
+                <li class="link">
+                    <a href="#">immune</a>
+                </li>
+                <li class="link">
+                    <a href="#">empresas</a>
+                </li>
+                <li class="link">
+                    <a href="#">estudiantes</a>
+                </li>
+                <li class="link">
+                    <a href="#">empleabilidad</a>
+                </li>
+            </ul><!-- en esta parte tenemos para hacer listas y tenemos dos formas para hacerlo que es de forma ordenada y no ordenada.-->
+            <!--si quieres poner una imagen lo nejor es poner una fuente externa
+            (siempre wque se pueda evitar imagen se evita porque pesa menos)-->
+            <!--para eso hay una pagina que se llama FONT AWESOME-->
+        </nav>
+        <div class="icons">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        
+    </header>
+        <section>
+            <div class="container">
+                <figure class="figure">
+                    <img src="./imagenes/IMG_0817.jpeg" alt="imagen" class="container-imagen"> <!--psra este caso la img hacemos margen y no padding-->
+                </figure>
+                <article class="article">
+                    <h2>que hacemos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe distinctio, ipsum fuga consectetur optio praesentium. Vitae minima similique necessitatibus illum. Sed corrupti ipsum doloribus neque, doloremque dignissimos atque omnis nostrum.</p>
+                </article>
+            </div>    
+        </section>
+
+    <header>
+        <section>
+            <div class="container">
+                <article class="article">
+                    <h2>
+                        tech talent recruitment
+                    </h2>
+                    <p> df dfvdfvfevveedfc</p>
+                    <h3>
+                        on boarding ...
+                    </h3>
+                    <p> dfcnfkevvkefndfcrcrcef</p>
+                    <h3> retos tecnologicos </h3>
+                    <p> fincrinckneciemcecimceim</p> 
+                </article>
+                <figure class="figure">
+                    <img src="./imagenes/IMG_0817.jpeg" alt=""
+                    class="container-imagen">
+                </figure>
+                <aside>
+                    madrid4tech
+                </aside>
+            </div>
+
+        </section>
+    </header>    
+
+ </body>
+ </html>
+
+ <!--ahora ya que tenemos la primera seccion hecha que es la cabecera emepzamos a tocar la parte grafica , y eso es con css -->
+
+ <!-- display :block(puesta por bloque), inline: bloque por linea( pero sin poder modificar tamaño), inline block linea pero pudiendo modifcar tamaño-->
